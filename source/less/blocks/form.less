@@ -1,0 +1,84 @@
+.form {
+  padding: 40px;
+  border: 2px solid @primary-color;
+  border-radius: 20px;
+
+  button {
+    border-radius: 50rem;
+    border: none;
+    background-color: @primary-color;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 28px;
+    font-size: 16px;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  label {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 30px;
+  }
+
+  input {
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 6px 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.form__title {
+  span {
+    color: #ff0000;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--fio {
+    &::before {
+      background-image: url("../img/form-icons/fio-black.svg");
+    }
+  }
+
+  &--organization {
+    &::before {
+      background-image: url("../img/form-icons/organization.svg");
+    }
+  }
+
+  &--city {
+    &::before {
+      background-image: url("../img/form-icons/city.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      background-image: url("../img/form-icons/email-black.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-image: url("../img/form-icons/phone-black.svg");
+    }
+  }
+}

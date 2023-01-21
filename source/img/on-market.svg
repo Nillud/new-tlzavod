@@ -1,0 +1,12 @@
+<svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_12_11" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="44" height="36">
+<path d="M42 5C42 4.20435 41.6839 3.44129 41.1213 2.87868C40.5587 2.31607 39.7956 2 39 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V14H42V5Z" fill="white" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.112 33.03L14.288 20.73L20.868 27.03L28.91 20L33.39 24.368" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42 12V31C42 31.7956 41.6839 32.5587 41.1213 33.1213C40.5587 33.6839 39.7956 34 39 34H10" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.112 8H35.112M9.11 8H11.11" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 12V21" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_12_11)">
+<path d="M-2 -6H46V42H-2V-6Z" fill="white"/>
+</g>
+</svg>

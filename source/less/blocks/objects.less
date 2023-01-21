@@ -1,0 +1,30 @@
+.objects ul {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+

@@ -1,0 +1,55 @@
+.feedback__contacts {
+  h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    width: 45%;
+    border: 2px solid @primary-color;
+    border-radius: 20px;
+    background-color: @background-light;
+    padding: 30px;
+  }
+
+  h4 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  a {
+    color: @primary-color;
+    font-size: 20px;
+  }
+}
+
+.feedback__item {
+  span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+  }
+
+  &--email {
+    span {
+      background-image: url("../img/form-icons/email-black.svg");
+    }
+  }
+
+  &--phone {
+    span {
+      background-image: url("../img/form-icons/phone-black.svg");
+    }
+  }
+}

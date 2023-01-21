@@ -1,0 +1,76 @@
+.stages img {
+  border-radius: 20px;
+  max-width: 580px;
+}
+
+.stages__step {
+  margin-right: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 0;
+    right: 47%;
+    transform: translate(-50%, 50%);
+    height: 160px;
+    z-index: -1;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #0b163f1f;
+    background-color: transparent;
+  }
+}
+
+.stages__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border: 2px solid rgba(11, 22, 63, 0.12);
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    width: 20px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--request {
+    &::before {
+      background-image: url("../img/stages/request.svg");
+    }
+  }
+
+  &--agreement {
+    &::before {
+      background-image: url("../img/stages/agreement.svg");
+    }
+  }
+
+  &--chat {
+    &::before {
+      background-image: url("../img/stages/chat.svg");
+    }
+  }
+
+  &--contract {
+    &::before {
+      background-image: url("../img/stages/contract.svg");
+    }
+  }
+
+  &--support {
+    &::before {
+      background-image: url("../img/stages/support.svg");
+    }
+  }
+}
