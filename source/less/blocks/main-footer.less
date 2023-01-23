@@ -1,5 +1,4 @@
 .main-footer {
-  // padding-top: 120px;
   background-color: @primary-color;
 
   &__nav {
@@ -53,7 +52,17 @@
   ul a {
     fill: #ffffff;
   }
+
+  @media (max-width: 767px) {
+    padding: 20px 0;
+
+    ul {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
 }
+
 
 .main-footer a {
   transition: all 0.6s ease-in-out;
