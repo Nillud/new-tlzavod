@@ -57,6 +57,20 @@ export const bootstrapScripts = () => {
     .pipe(browser.stream());
 }
 
+// Leaflet
+
+export const leafletStyles = () => {
+  return gulp.src('source/css/leaflet.css')
+    .pipe(gulp.dest('build/css'))
+    .pipe(browser.stream());
+}
+
+export const leafletScripts = () => {
+  return gulp.src('source/js/leaflet.js')
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
+}
+
 // Images
 
 const optimizeImages = () => {
@@ -158,6 +172,8 @@ export const build = gulp.series(
     scripts,
     bootstrapScripts,
     bootstrapStyles,
+    leafletStyles,
+    leafletScripts,
     svg,
     sprite,
     // createWebp
@@ -177,6 +193,8 @@ export default gulp.series(
     scripts,
     bootstrapScripts,
     bootstrapStyles,
+    leafletStyles,
+    leafletScripts,
     svg,
     sprite,
     // createWebp
