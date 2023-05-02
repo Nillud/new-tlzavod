@@ -11,11 +11,39 @@
     margin-bottom: 20px;
 
     h3 {
+      font-size: 24px;
       font-weight: bold;
     }
 
     p {
       margin-bottom: 0;
+    }
+
+    a img {
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      border: 2px solid #0b163f;
+      border-radius: 10px;
+      max-height: 260px;
+      float: right;
+      margin-right: 20px;
+    }
+
+    &:nth-child(2n) {
+      img {
+        margin-left: 10px;
+        float: left;
+      }
+
+      p,h3 {
+        text-align: right;
+      }
     }
   }
 }
