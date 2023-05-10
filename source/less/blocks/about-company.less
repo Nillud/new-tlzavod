@@ -3,6 +3,12 @@
     float: right;
     transition: all 0.6s ease-in-out;
 
+    @media (max-width: 767px) {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
     &:hover {
       transform: scale(1.1);
     }

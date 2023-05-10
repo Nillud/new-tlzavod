@@ -4,12 +4,28 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px 40px;
 
+    @media (max-width: 1360px) {
+      grid-template-columns: 1fr;
+    }
+
     li {
       display: flex;
       padding: 20px;
       border: 1px solid #0b163f;
       border-radius: 10px;
       margin-bottom: 20px;
+
+      @media (max-width: 767px) {
+        padding: 10px;
+        margin-bottom: 0;
+
+        .carousel-control-prev {
+          left: -40px;
+        }
+        .carousel-control-next {
+          right: -40px;
+        }
+      }
 
       h3, p {
         text-align: center;
@@ -18,6 +34,17 @@
       h3 {
         font-size: 24px;
         font-weight: bold;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        @media (max-width: 767px) {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
       }
 
       .service-card {
@@ -39,9 +66,17 @@
           .carousel {
             width: 400px;
 
+            @media (max-width: 767px) {
+              width: 200px;
+            }
+
             img {
               max-height: 300px;
               margin: 0 auto;
+
+              @media (max-width: 767px) {
+                max-height: 200px;
+              }
             }
           }
         }
